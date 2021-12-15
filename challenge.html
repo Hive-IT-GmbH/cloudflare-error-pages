@@ -25,7 +25,7 @@
             <h1>
               <span class="cf-error-type" data-translate="error">Erweiterter Sicherheitscheck</span>
             </h1>
-            <h2 class="cf-subheadline" data-translate="error_desc">Unser Server kann Ihre Anfrage gerade nicht beantworten</h2>
+            <h2 class="cf-subheadline" data-translate="error_desc">Bitte lösen Sie das Captcha um <span class="domain"></span> aufzurufen.</h2>
         </div><!-- /.error-overview -->
         
         <div class="cf-section cf-highlight cf-captcha-container">
@@ -66,7 +66,7 @@
     </div><!-- /#cf-error-details -->
 </div><!-- /#cf-wrapper -->
 <script>
-  document.querySelector(".heading-ray-id.datetime").innerText = new Date().toUTCString()
+  document.querySelector(".domain").innerText = window.location.host;
 </script>
 </body>
 </html>
